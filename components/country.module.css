@@ -1,0 +1,39 @@
+.countryDiv{
+    padding: 7% 4%;
+    color: white;    
+    display: flex;
+    justify-content: space-around;
+}
+
+.countryDiv img {
+    width: 40%;
+}
+
+.infoDiv {
+    width: 50%;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    
+}
+
+.row p{
+    font-weight: 600;
+    margin: 6px 0;
+}
+
+.row span{
+    font-weight: 300;
+}
+
+.col{
+    /* display: inline-block; */
+    text-align: left;
+    width: 50%;
+}
+
+.borderRow p{
+    display: flex;
+}

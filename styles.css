@@ -1,0 +1,22 @@
+:root {
+    --background-color:hsl(207, 26%, 17%);
+    --element-color:hsl(209, 23%, 22%);
+    --text-color:white;
+    --home-page-size:14px;
+    --detail-page-size:16px;
+}
+
+body{
+    background-color: var(--background-color);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.card-div{
+    margin-top: 5%;
+    padding: 5% 5%;
+}
+
+.fa-moon {
+    background-color: white;
+    color: white;
+}

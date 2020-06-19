@@ -1,0 +1,47 @@
+.card {
+    color:var(--text-color);
+    width: 21%;
+    display: inline-block;
+    text-align: center;
+    padding: 0 2%;
+    margin-bottom: 2%;
+    
+}
+
+.flag {
+    width: 100%;
+    height: 12vw;
+    border-radius: 5px 5px 0 0;
+}
+
+
+.info{
+    background-color: var(--element-color);
+    margin-top: 0;
+    padding-bottom: 10%;
+    border-radius: 0 0 5px 5px;
+}
+
+.info h1 {
+    margin: -5px 0 0 0;
+    padding: 10% 10% 5%;
+    text-align: left;
+    font-size: var(--detail-page-size);
+    font-weight: 800;
+}
+
+.info p{
+    text-align: left;
+    margin: 0;
+    padding: 2% 10%;
+    font-size: var(--home-page-size);
+    font-weight: 600;
+}
+
+.info h1:hover{
+    cursor:pointer;
+}
+
+.info .detail{
+    font-weight: 300;
+}

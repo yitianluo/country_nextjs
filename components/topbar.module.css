@@ -1,0 +1,29 @@
+.topbar {
+    background-color: var(--element-color);
+    margin: 0;
+    padding: 0 7%;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    font-size:var(--detail-page-siz);
+}
+
+.topbar h2 {
+    font-weight: 600;
+    font-size:var(--detail-page-size);
+}
+
+.mode{
+    display: flex;
+}
+
+.mode img{
+    width: 1.5rem;
+    color: white;
+    margin-right: 0.5rem;
+}
