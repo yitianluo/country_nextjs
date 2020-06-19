@@ -1,9 +1,10 @@
 import React from "react";
 import TopBar from "./topbar";
 import Border from "./border";
+import BackButton from "./backbutton";
 import styles from "./country.module.css";
-import Link from "next/link";
-import { getStaticProps } from "../pages";
+// import Link from "next/link";
+// import { getStaticProps } from "../pages";
 
 
 function Country(props){
@@ -22,15 +23,22 @@ function Country(props){
     }
 
     function getBorder(border,index){
+        
+        const country = props.compareList.filter(item => item.code===border);
+        const countryName = country[0].name;
+
+        const name = countryName.substring(0, countryName.indexOf("(")>0 ? countryName.indexOf("("):countryName.length);
+        console.log(name);
+
         return (
-            <Border key={index} border={border} />
+            <Border key={index} borderCode={border} name={name} />
         )
     }
 
     return(
         <div>
             <TopBar />
-            <button type="submit">Back</button>
+            <BackButton />
             <div className={styles.countryDiv}>
                 <img src={props.flag}></img>
                 <div className={styles.infoDiv}>
@@ -55,7 +63,7 @@ function Country(props){
                     </div>
 
                     <div className={styles.borderRow}>
-                        Border Countries: {props.borders.map(getBorder)}
+                        <div className={styles.borderP}>Border Countries:</div> {props.borders.map(getBorder)}
                     </div>
                     
                 </div>

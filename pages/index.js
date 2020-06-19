@@ -1,8 +1,10 @@
 import Card from "../components/card";
 import TopBar from "../components/topbar";
+import ToolBar from "../components/toolbar";
 import React from "react";
 import Head from "next/head";
 import ReactDOM from "react-dom";
+import {getAllCountries} from "../lib/countryData";
 
 export default function Home({countries}) {
 
@@ -17,7 +19,7 @@ export default function Home({countries}) {
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet"></link>
       </Head>
       <TopBar />
-
+      <ToolBar />
       <div className="card-div">
         {countries.map(createCard)}
       </div>
@@ -29,13 +31,10 @@ export default function Home({countries}) {
 export async function getStaticProps() {
   // Call an external API endpoint to get posts.
   // You can use any data fetching library
-  const res = await fetch('https://restcountries.eu/rest/v2/region/europe');
   
-  const countries = await res.json();
   
+  const countries = await getAllCountries();
 
-  // By returning { props: posts }, the Blog component
-  // will receive `posts` as a prop at build time
   return {
     props: {
       countries
