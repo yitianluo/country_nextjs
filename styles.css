@@ -2,6 +2,15 @@
     --background-color:hsl(207, 26%, 17%);
     --element-color:hsl(209, 23%, 22%);
     --text-color:white;
+    --place-color:white;
+    --home-page-size:14px;
+    --detail-page-size:16px;
+}
+
+html .darkMode {
+    --background-color:hsl(207, 26%, 17%);
+    --element-color:hsl(209, 23%, 22%);
+    --text-color:white;
     --home-page-size:14px;
     --detail-page-size:16px;
 }

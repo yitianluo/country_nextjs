@@ -1,6 +1,6 @@
 .countryDiv{
     padding: 4% 4%;
-    color: white;    
+    color: var(--text-color);   
     display: flex;
     justify-content: space-around;
 }

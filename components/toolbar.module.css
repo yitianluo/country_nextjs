@@ -1,21 +1,48 @@
 .toolbar {
-    margin-top: 10rem;
+    margin-top: 8rem;
     display: flex;
     padding: 0 7%;
     color: var(--text-color);
     justify-content: space-between;
+    align-items:center;
 }
 
-.toolbar input{
-    color:white;
-    border: 0;
+.searchDiv{  
+    display: flex;
+    box-shadow: 0px 0px 0.4px 0px grey;
+    background-color: var(--element-color);
+}
+
+.searchDiv svg{
+    border-radius: 5px 0 0 5px;
+    fill : var(--text-color); 
     padding: 0.5rem 1rem;
+    height: 2rem;
+    
+}
+
+.searchDiv input {
+    border-radius: 0 5px 5px 0;
+    color: var(--place-color);
     background-color:var(--element-color);
     font-size: var(--detail-page-size);
+    border: 0;
+    padding: 0 1rem;
 }
 
 .toolbar ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: var(--text-color);
+    color: var(--place-color);
     opacity: 1; /* Firefox */
   }
 
+  @media (max-width:1028px) {
+      .toolbar {
+          display: block;
+          margin-top: 5rem;
+      }
+
+      .searchDiv {
+          width: 100%;
+          margin-bottom: 2rem;
+      }
+  }

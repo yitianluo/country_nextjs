@@ -4,7 +4,10 @@ import Link from "next/link";
 function Card(props){
     return(
         <div className={styles.card}>
-            <img className={styles.flag} src={props.flag}></img>
+            <div className={styles.flag}>
+                <img src={props.flag} className={styles.flagImg}/>
+            </div>
+            
             <div className={styles.info}>
             <Link href="/countries/[name]" as={"/countries/"+props.id}>
                 <h1>{props.name}</h1>

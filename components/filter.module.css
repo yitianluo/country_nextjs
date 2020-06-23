@@ -1,0 +1,50 @@
+.filterDiv{
+    position: relative;
+    box-shadow: 0px 0px 0.4px 0px grey;
+}
+
+.buttonDiv{
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--element-color);
+}
+
+.buttonDiv p {
+    margin: 8px 16px 8px 0;
+}
+
+
+.buttonDiv button{
+    font-size: var(--detail-page-size);
+    padding: 0.5rem 1rem;
+    background-color: var(--element-color);
+    border: 0;
+    color: var(--text-color);
+}
+
+.buttonDiv svg {
+    height: 1rem;   
+    fill: var(--text-color);
+}
+
+.filterList {
+    margin-top: 5px;
+    padding-left: 1rem;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-color: var(--element-color);
+}
+
+.filterList p:hover {
+    cursor: pointer;
+}
+
+@media (max-width:1028px) {
+    .filterDiv {
+        width: 60%;
+    }
+}

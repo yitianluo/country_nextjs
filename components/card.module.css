@@ -4,27 +4,34 @@
     display: inline-block;
     text-align: center;
     padding: 0 2%;
-    margin-bottom: 2%;
-    
+    margin-bottom: 2rem;
 }
 
 .flag {
     width: 100%;
-    height: 12vw;
     border-radius: 5px 5px 0 0;
+    background-color: var(--element-color);
+}
+
+.flagImg{
+    box-shadow: 0px 0px 0.4px 0px grey; 
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    display: block;
 }
 
 
 .info{
     background-color: var(--element-color);
-    margin-top: 0;
+    padding-top: 1rem;
     padding-bottom: 10%;
     border-radius: 0 0 5px 5px;
+    box-shadow: 0px 0px 0.4px 0px grey;
+    display: block;
 }
 
 .info h1 {
-    margin: -5px 0 0 0;
-    padding: 10% 10% 5%;
+    padding: 5% 10% 5%;
     text-align: left;
     font-size: var(--detail-page-size);
     font-weight: 800;
@@ -44,4 +51,10 @@
 
 .info .detail{
     font-weight: 300;
+}
+
+@media (max-width:1028px){
+    .card {
+        width: 100%;
+    }
 }
