@@ -36,4 +36,16 @@
     .topbar {
         font-size:10px;
     }
+
+    .topbar h2 {
+        font-size: 8px;
+    }
+
+    .mode svg { 
+        fill: var(--text-color); 
+        width: 1rem;
+        margin-right: 0.2rem;
+        background-color: var(--element-color);
+    }
+
 }
