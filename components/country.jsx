@@ -43,25 +43,20 @@ function Country(props){
                 <img src={props.flag}></img>
                 <div className={styles.infoDiv}>
                     <h1>{props.name}</h1>
-                    <div className={styles.row}>
-                        <p className={styles.col}>Native Name: <span>{props.nativeName}</span></p>
-                        <p className={styles.col}>Top Level Domain: <span>{props.topLevelDomain}</span></p>
+                    <div className={styles.colDiv}>
+                    <div className={styles.col}>
+                        <p className={styles.row}>Native Name: <span>{props.nativeName}</span></p>
+                        <p className={styles.row}>Population: <span>{props.population}</span></p>
+                        <p className={styles.row}>Region: <span>{props.region}</span></p>
+                        <p className={styles.row}>Sub Region: <span>{props.subregion}</span></p>
+                        <p className={styles.row}>Capital: <span>{props.capital}</span></p>
                     </div>
-                    <div className={styles.row}>
-                        <p className={styles.col}>Population: <span>{props.population}</span></p>
-                        <p className={styles.col}>Currencies: {props.currencies.map(getCurrency)}</p>
+                    <div className={styles.col}>
+                        <p className={styles.row}>Top Level Domain: <span>{props.topLevelDomain}</span></p>
+                        <p className={styles.row}>Currencies: {props.currencies.map(getCurrency)}</p>
+                        <p className={styles.row}>Languages: {props.languages.map(getLanguage)}</p>
                     </div>
-                    <div className={styles.row}>
-                        <p className={styles.col}>Region: <span>{props.region}</span></p>
-                        <p className={styles.col}>Languages: {props.languages.map(getLanguage)}</p>
                     </div>
-                    <div className={styles.row}>
-                        <p className={styles.col}>Sub Region: <span>{props.subregion}</span></p>
-                    </div>
-                    <div className={styles.row}>
-                        <p className={styles.col}>Capital: <span>{props.capital}</span></p>
-                    </div>
-
                     <div className={styles.borderRow}>
                         <div className={styles.borderP}>Border Countries:</div> {props.borders.map(getBorder)}
                     </div>

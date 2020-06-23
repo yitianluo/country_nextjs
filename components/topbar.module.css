@@ -15,14 +15,10 @@
     box-shadow: 0px 0.1px 0.4px 0px grey;
 }
 
-.topbar h2 {
-    font-weight: 600;
-    font-size:var(--detail-page-size);
-}
-
 .mode{
     display: flex;
     color:var(--text-color);
+    align-items: center;
 }
 
 .mode svg { 
@@ -31,6 +27,13 @@
     margin-right: 0.5rem;
     background-color: var(--element-color);
 }
+
+.topbar h2 {
+    font-weight: 600;
+    font-size:var(--detail-page-size);
+}
+
+
 
 @media (max-width:1028px) {
     .topbar {

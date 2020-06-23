@@ -3,6 +3,7 @@
     color: var(--text-color);   
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .countryDiv img {
@@ -13,10 +14,19 @@
     width: 50%;
 }
 
+.colDiv {
+    display: flex;
+}
+
+.col{
+    /* display: inline-block; */
+    text-align: left;
+    width: 100%;
+}
+
 .row{
     display: flex;
     width: 100%;
-    
 }
 
 .row p{
@@ -28,11 +38,7 @@
     font-weight: 300;
 }
 
-.col{
-    /* display: inline-block; */
-    text-align: left;
-    width: 50%;
-}
+
 
 .borderRow{
     display: flex;
@@ -43,4 +49,32 @@
 
 .borderP{
     padding: 0.5rem 0;
+}
+
+@media (max-width:1028px){
+
+    .countryDiv{
+        display: block;
+    }
+
+    .countryDiv img {
+        width: 100%;
+    }
+    
+    .infoDiv {
+        width: 100%;
+    }
+
+    
+
+    .colDiv {
+        display: block;
+    }
+
+    .col{
+        /* display: inline-block; */
+        text-align: left;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
 }

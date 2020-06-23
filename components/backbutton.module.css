@@ -1,5 +1,5 @@
 .backDiv {
-    margin-top:10%;
+    margin-top:8rem;
     padding: 0 6.5%;
     display: flex;
 }
@@ -15,4 +15,10 @@
 
 .backButton span{
     margin-right: 1rem;
+}
+
+@media (max-width:1028px) {
+    .backDiv{
+        margin-top: 6rem;
+    }
 }
